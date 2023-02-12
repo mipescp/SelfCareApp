@@ -1,0 +1,15 @@
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\bin\Debug\net6.0\SelfCare.Repository.deps.json
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\bin\Debug\net6.0\SelfCare.Repository.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\bin\Debug\net6.0\SelfCare.Repository.pdb
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.csproj.AssemblyReference.cache
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.AssemblyInfoInputs.cache
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.AssemblyInfo.cs
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.csproj.CoreCompileInputs.cache
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\refint\SelfCare.Repository.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.pdb
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\ref\SelfCare.Repository.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\bin\Debug\net6.0\SelfCare.Domain.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\bin\Debug\net6.0\SelfCare.Domain.pdb
+C:\Users\miguel.pereira\source\repos\SelfCare.Repository\obj\Debug\net6.0\SelfCare.Repository.csproj.CopyComplete

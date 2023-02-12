@@ -1,0 +1,12 @@
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\bin\Debug\net6.0\SelfCare.Clients.deps.json
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\bin\Debug\net6.0\SelfCare.Clients.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\bin\Debug\net6.0\SelfCare.Clients.pdb
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.csproj.AssemblyReference.cache
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.AssemblyInfoInputs.cache
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.AssemblyInfo.cs
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.csproj.CoreCompileInputs.cache
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\refint\SelfCare.Clients.dll
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\SelfCare.Clients.pdb
+C:\Users\miguel.pereira\source\repos\SelfCare.Clients\obj\Debug\net6.0\ref\SelfCare.Clients.dll
