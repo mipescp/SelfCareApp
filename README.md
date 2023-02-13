@@ -26,3 +26,4 @@ Features:
 - Protected routes on the react application
 - JWT Bearer authentication integration between backend and frontend
 - Protected routes on backend. [Authorized] endpoints.
+- Add CORS Policy allowing only specific hosts
