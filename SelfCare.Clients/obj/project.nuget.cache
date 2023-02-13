@@ -1,10 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "fmk7D5r28SDACVV+cBo1wPBWOepYM/oy5Ao9X0vCvyHEX7gFMOIVnygsat9SHms5urOBiLJDO50OjHabHx5QGw==",
+  "dgSpecHash": "kwBBpdWzrxZd6PUUy0BE32KZT92dT5IbOc+HPzQQhO5w4Kt1JRPNP/7y8lJFusrbpJmcv7AMnzOnTowwnrPTpw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\SelfCare.Clients.csproj",
+  "projectFilePath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\SelfCare.Clients.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\miguel.pereira\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512"
+    "C:\\Users\\miguel.pereira\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512",
+    "C:\\Users\\miguel.pereira\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
+    "C:\\Users\\miguel.pereira\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\miguel.pereira\\.nuget\\packages\\newtonsoft.json\\13.0.2\\newtonsoft.json.13.0.2.nupkg.sha512",
+    "C:\\Users\\miguel.pereira\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
   ],
   "logs": []
 }

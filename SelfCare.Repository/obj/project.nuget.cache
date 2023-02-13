@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M69lFn6UAb1h4ubMTgycNaozH/055LVGztOcqBUVHZ5YRXTl6LwyUMPQnYQ0wC2VrclLfmUFg29CT6gu6cnGXA==",
+  "dgSpecHash": "7Ypr1Ukd4L7uZw9BUclNoXtuZqVJaKfBwnknMC4somyG8kC5IYhBF0xafLWNwCInia6Sbv+AX7fzkOLfmheFCQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\SelfCare.Repository.csproj",
+  "projectFilePath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\SelfCare.Repository.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\miguel.pereira\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\miguel.pereira\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

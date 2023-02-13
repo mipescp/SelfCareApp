@@ -39,5 +39,12 @@ namespace SelfCare.Repository.MongoDB
 
             return await result.FirstAsync();
         }
+
+        public async Task<User> QueryUserByIdAsync(int id)
+        {
+            var collection = client.GetDatabase("auth").GetCollection<User>("user");
+            var filter = Builders<User>.Filter.Eq(x => x.Id, id);
+            return await (await collection.FindAsync(filter)).FirstOrDefaultAsync();
+        }
     }
 }

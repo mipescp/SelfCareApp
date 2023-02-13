@@ -1,24 +1,33 @@
-import JokePage from "./components/JokePage.tsx";
-import Home from "./components/Home";
+import Home from "./components/Home.tsx";
 import Login from "./components/Login.tsx";
+import Logout from "./components/Logout.tsx";
 import Registration from "./components/Registration.tsx";
+import { RequireAuth } from "react-auth-kit";
 
 const AppRoutes = [
   {
     index: true,
-    element: <Home />,
+    element: (
+      <RequireAuth loginPath="/login">
+        <Home />
+      </RequireAuth>
+    ),
   },
   {
     path: "/login",
     element: <Login />,
   },
   {
-    path: "/registration",
-    element: <Registration />,
+    path: "/logout",
+    element: (
+      <RequireAuth loginPath="/login">
+        <Logout />{" "}
+      </RequireAuth>
+    ),
   },
   {
-    path: "/joke",
-    element: <JokePage />,
+    path: "/registration",
+    element: <Registration />,
   },
 ];
 

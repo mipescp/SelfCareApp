@@ -17,12 +17,17 @@ namespace SelfCare.Application.Handlers.User.Login
         {
             var response = await _mongoDbRepository.QueryUserAsync(request.Username);
 
+            if (response is null)
+            {
+                return null;
+            }
+
             bool success = Cypher.ByteComparison(response.Password, Cypher.GenerateSaltedHash(request.Password));
 
             var loginResponse = new LoginResponse
             {
                 Success = success,
-                Token = success ? request.Username : null,
+                Token = success ? TokenService.GenerateToken(response) : null,
             };
 
             return loginResponse;

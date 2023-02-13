@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Application\\SelfCare.Application.csproj": {}
+    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Application\\SelfCare.Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Application\\SelfCare.Application.csproj": {
+    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Application\\SelfCare.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Application\\SelfCare.Application.csproj",
+        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Application\\SelfCare.Application.csproj",
         "projectName": "SelfCare.Application",
-        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Application\\SelfCare.Application.csproj",
+        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Application\\SelfCare.Application.csproj",
         "packagesPath": "C:\\Users\\miguel.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Application\\obj\\",
+        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -35,11 +35,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\SelfCare.Clients.csproj": {
-                "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\SelfCare.Clients.csproj"
+              "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\SelfCare.Clients.csproj": {
+                "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\SelfCare.Clients.csproj"
               },
-              "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\SelfCare.Repository.csproj": {
-                "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\SelfCare.Repository.csproj"
+              "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\SelfCare.Repository.csproj": {
+                "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\SelfCare.Repository.csproj"
               }
             }
           }
@@ -62,9 +62,17 @@
               "target": "Package",
               "version": "[11.1.0, )"
             },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.26.1, )"
             }
           },
           "imports": [
@@ -87,14 +95,14 @@
         }
       }
     },
-    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\SelfCare.Clients.csproj": {
+    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\SelfCare.Clients.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\SelfCare.Clients.csproj",
+        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\SelfCare.Clients.csproj",
         "projectName": "SelfCare.Clients",
-        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\SelfCare.Clients.csproj",
+        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\SelfCare.Clients.csproj",
         "packagesPath": "C:\\Users\\miguel.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Clients\\obj\\",
+        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Clients\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -130,6 +138,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.2, )"
@@ -155,14 +167,14 @@
         }
       }
     },
-    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj": {
+    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj",
         "projectName": "SelfCare.Domain",
-        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj",
+        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj",
         "packagesPath": "C:\\Users\\miguel.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\obj\\",
+        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -217,14 +229,14 @@
         }
       }
     },
-    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\SelfCare.Repository.csproj": {
+    "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\SelfCare.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\SelfCare.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\SelfCare.Repository.csproj",
         "projectName": "SelfCare.Repository",
-        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\SelfCare.Repository.csproj",
+        "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\SelfCare.Repository.csproj",
         "packagesPath": "C:\\Users\\miguel.pereira\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Repository\\obj\\",
+        "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -248,8 +260,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj": {
-                "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj"
+              "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj": {
+                "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj"
               }
             }
           }

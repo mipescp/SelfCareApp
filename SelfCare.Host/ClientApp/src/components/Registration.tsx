@@ -10,6 +10,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useNavigate } from "react-router-dom";
 
 function Copyright(props: any) {
   return (
@@ -32,13 +33,35 @@ function Copyright(props: any) {
 const theme = createTheme();
 
 export default function Registration() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const navigate = useNavigate();
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
+    const requestBody = {
+      username: data.get("username"),
       password: data.get("password"),
-    });
+      displayName: data.get("displayName"),
+    };
+
+    try {
+      const response = await fetch("https://localhost:7077/api/user/Signup", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      if (response.ok) {
+        var responseAsJson = await response.json();
+        console.log(responseAsJson);
+        navigate("/login");
+      }
+    } catch (err) {
+      console.log(err);
+    }
   };
 
   return (
@@ -66,7 +89,7 @@ export default function Registration() {
             sx={{ mt: 3 }}
           >
             <Grid container spacing={2}>
-              <Grid item xs={12} sm={6}>
+              <Grid item xs={12}>
                 <TextField
                   autoComplete="given-name"
                   name="displayName"

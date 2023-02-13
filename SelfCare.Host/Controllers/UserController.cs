@@ -3,14 +3,17 @@ using MediatR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SelfCare.Api.Requests.User;
+using SelfCare.Application.Handlers.User.Get;
 using SelfCare.Application.Handlers.User.Login;
 using SelfCare.Application.Handlers.User.Signup;
 using SelfCare.Repository.MongoDB;
+using System.Security.Claims;
 
 namespace SelfCare.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class UserController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -24,12 +27,25 @@ namespace SelfCare.Api.Controllers
             this._mongoDbRepository = mongoDbRepository ?? throw new ArgumentNullException(nameof(mongoDbRepository));
         }
 
-        [HttpGet]
+        [HttpPost]
         [AllowAnonymous]
         [Route("Login")]
-        public async Task<LoginResponse> Login([FromQuery] LoginClientRequest loginClientRequest)
+        public async Task<IActionResult> Login([FromBody] LoginClientRequest loginClientRequest)
         {
-            return await _mediator.Send(_mapper.Map<LoginRequest>(loginClientRequest));
+
+            if (loginClientRequest == null || string.IsNullOrEmpty(loginClientRequest.Username) || string.IsNullOrEmpty(loginClientRequest.Password))
+            {
+                return BadRequest("Bad request. Please try again");
+            }
+
+            var response = await _mediator.Send(_mapper.Map<LoginRequest>(loginClientRequest));
+
+            if (response == null || !response.Success)
+            {
+                return BadRequest("Bad credentials. Please try again");
+            }
+
+            return Ok(response);
         }
 
         [HttpPost]
@@ -38,6 +54,25 @@ namespace SelfCare.Api.Controllers
         public async Task<SignupResponse> SignUp([FromBody] SignupClientRequest signupClientRequest)
         {
             return await _mediator.Send(_mapper.Map<SignupRequest>(signupClientRequest));
+        }
+
+        [HttpGet]
+        [Route("Details")]
+        public async Task<IActionResult> GetUserById([FromRoute] GetUserClientRequest getUserClientRequest)
+        {
+            // Introspect token to get userId added to Identity claims
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+            var claims = identity?.Claims?.FirstOrDefault(x => x.Type.Equals(ClaimTypes.NameIdentifier));
+
+            if (claims == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(await _mediator.Send(new GetUserRequest
+            {
+                Id = claims.Value
+            }));
         }
     }
 }

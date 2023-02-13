@@ -30,3 +30,23 @@ export interface LoginResponse {
     success: boolean;
     token?: string | undefined;
 }
+
+export interface SignupResponse {
+    id: number;
+}
+
+export interface SignupClientRequest {
+    username?: string | undefined;
+    password?: string | undefined;
+    displayName?: string | undefined;
+}
+
+export interface GetUserClientRequest {
+}
+
+export interface FileResponse {
+    data: Blob;
+    status: number;
+    fileName?: string;
+    headers?: { [name: string]: any };
+}

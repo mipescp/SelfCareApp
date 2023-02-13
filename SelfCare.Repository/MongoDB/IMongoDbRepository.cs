@@ -6,5 +6,6 @@ namespace SelfCare.Repository.MongoDB
     {
         Task<User> CreateUserAsync(User user);
         Task<User> QueryUserAsync(string username);
+        Task<User> QueryUserByIdAsync(int id);
     }
 }

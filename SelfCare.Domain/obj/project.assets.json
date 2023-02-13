@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj",
       "projectName": "SelfCare.Domain",
-      "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\SelfCare.Domain.csproj",
+      "projectPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\SelfCare.Domain.csproj",
       "packagesPath": "C:\\Users\\miguel.pereira\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCare.Domain\\obj\\",
+      "outputPath": "C:\\Users\\miguel.pereira\\source\\repos\\SelfCareApp\\SelfCare.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

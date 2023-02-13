@@ -9,6 +9,7 @@ namespace SelfCare.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class MiscController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -22,7 +23,6 @@ namespace SelfCare.Api.Controllers
 
         [HttpGet]
         [Route("Joke")]
-        [AllowAnonymous]
         public async Task<JokeResponse> Joke([FromQuery] JokeClientRequest jokeClientRequest)
         {
             return await _mediator.Send(_mapper.Map<JokeRequest>(jokeClientRequest));

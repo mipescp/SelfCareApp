@@ -10,6 +10,9 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
+import { useSignIn } from "react-auth-kit";
+import { useNavigate } from "react-router-dom";
+import { red } from "@mui/material/colors";
 
 function Copyright(props: any) {
   return (
@@ -32,13 +35,43 @@ function Copyright(props: any) {
 const theme = createTheme();
 
 export default function Login() {
-  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+  const signIn = useSignIn();
+  const navigate = useNavigate();
+
+  const [errorMessage, setErrorMessage] = React.useState(null);
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
+    const requestBody = {
+      username: data.get("username"),
       password: data.get("password"),
-    });
+    };
+
+    try {
+      const response = await fetch("https://localhost:7077/api/user/login", {
+        method: "POST",
+        headers: {
+          Accept: "application/json",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(requestBody),
+      });
+
+      if (response.ok) {
+        var responseAsJson = await response.json();
+        console.log(responseAsJson);
+        signIn({
+          token: responseAsJson.token,
+          expiresIn: 3600,
+          tokenType: "Bearer",
+          authState: { email: requestBody.username },
+        });
+        navigate("/");
+      }
+    } catch (err) {
+      setErrorMessage(err);
+    }
   };
 
   return (
@@ -69,9 +102,9 @@ export default function Login() {
               margin="normal"
               required
               fullWidth
-              id="email"
-              label="Email Address"
-              name="email"
+              id="username"
+              label="Username"
+              name="username"
               autoComplete="email"
               autoFocus
             />
@@ -93,6 +126,9 @@ export default function Login() {
             >
               Sign In
             </Button>
+            {errorMessage && (
+              <Typography color={red}>{errorMessage}</Typography>
+            )}
             <Grid container>
               <Grid item>
                 <Link href="/registration" variant="body2">
