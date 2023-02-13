@@ -21,7 +21,7 @@ Features:
 - MediatR design pattern on Backend
 - Easy E2E integration between Backend and Frontend
 - Usage of Automapper
-- Usage of NSwag extention for auto client generation (to be consumed by frontend with command "npm run nswag")
+- Usage of NSwag extention for auto client generation (to be consumed by frontend with command "npm run nswag:local")
 - 2 "Modules", one that displays a random joke and another 
 - Protected routes on the react application
 - JWT Bearer authentication integration between backend and frontend
