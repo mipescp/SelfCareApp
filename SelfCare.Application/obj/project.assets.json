@@ -626,6 +626,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0",
           "MongoDB.Driver": "2.19.0",
           "MongoDB.Driver.Core": "2.19.0",
           "SelfCare.Domain": "1.0.0"

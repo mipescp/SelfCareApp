@@ -1,4 +1,5 @@
-﻿using MongoDB.Driver;
+﻿using Microsoft.Extensions.Options;
+using MongoDB.Driver;
 using SelfCare.Domain;
 
 namespace SelfCare.Repository.MongoDB
@@ -7,9 +8,11 @@ namespace SelfCare.Repository.MongoDB
     {
         MongoClient client;
 
-        public MongoDbRepository()
+        public MongoDbRepository(IOptions<MongoDbOptions> options)
         {
-            var settings = MongoClientSettings.FromConnectionString("mongodb+srv://mongodb_user_1234:M30fRCaYGaQxo7af@cluster0.c5dyxn9.mongodb.net/?retryWrites=true&w=majority");
+            var connectionString = options?.Value?.ConnectionString ?? throw new ArgumentNullException(nameof(options));
+
+            var settings = MongoClientSettings.FromConnectionString(connectionString);
             settings.ServerApi = new ServerApi(ServerApiVersion.V1);
 
             client = new MongoClient(settings);

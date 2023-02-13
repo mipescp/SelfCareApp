@@ -43,6 +43,7 @@ namespace SelfCare.Api
             Configuration.Bind(nameof(CorsConfig), corsOptions);
 
             services.Configure<JokeApiOptions>(options => Configuration.GetSection(nameof(JokeApiOptions)).Bind(options));
+            services.Configure<MongoDbOptions>(options => Configuration.GetSection(nameof(MongoDbOptions)).Bind(options));
 
             services.AddCors(options =>
                 options.AddPolicy(AllowSpecificOriginsPolicyName, corsPolicyBuilder =>
