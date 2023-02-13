@@ -13,7 +13,8 @@ React application is located in SelfCare.Host/ClientApp.
 Steps to run the application
 1. Get into SelfCare.Host/ClientApp and run "npm install" at the root.
 2. Go back to SelfCare.Host and open SelfCare.Host.sln using your desired editor (recommend using Visual Studio)
-3. Profit?
+3. Start the application, choosing SelfCare.Host as your starting project.
+4. Profit?
 
 
 Features:
