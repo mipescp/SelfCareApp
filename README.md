@@ -28,4 +28,4 @@ Features:
 - JWT Bearer authentication integration between backend and frontend
 - Protected routes on backend. [Authorized] endpoints.
 - Add CORS Policy allowing only specific hosts
--Swagger UI available at https://localhost:7077/swagger
+- Swagger UI available at https://localhost:7077/swagger
